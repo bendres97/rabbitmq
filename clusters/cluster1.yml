@@ -1,0 +1,10 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: cluster1
+spec:
+  replicas: 3
+  persistence:
+    storageClassName: longhorn
+    storage: 5Gi
+  image: rabbitmq:3.9.27-management
