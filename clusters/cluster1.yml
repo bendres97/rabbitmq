@@ -7,4 +7,4 @@ spec:
   persistence:
     storageClassName: longhorn
     storage: 5Gi
-  image: rabbitmq:3.9.27-management
+  image: rabbitmq:3.13-management
