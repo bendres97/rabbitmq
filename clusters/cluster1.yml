@@ -8,3 +8,5 @@ spec:
     storageClassName: longhorn
     storage: 5Gi
   image: rabbitmq:3.13-management
+  service:
+    type: LoadBalancer
