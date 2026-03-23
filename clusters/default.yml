@@ -1,0 +1,12 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: default
+spec:
+  replicas: 3
+  persistence:
+    storageClassName: longhorn
+    storage: 5Gi
+  image: rabbitmq:4.2.5-management
+  service:
+    type: LoadBalancer
